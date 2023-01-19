@@ -25,6 +25,17 @@ namespace UC_stack_queue
             
 
         }
+        public void dequeue()
+        {
+            if(front == null)
+            {
+                Console.WriteLine("the queue is empty");
+            }
+            else
+            {
+                front= front.next;
+            }
+        }
         public void show()
         {
             Node temp= front;

@@ -10,6 +10,10 @@ namespace UC_stack_queue
             a.enqueue(56);
             a.enqueue(30);
             a.enqueue(70);
+            a.dequeue();
+            a.dequeue();
+            a.dequeue();
+            a.dequeue();
             a.show();
         }
     }
