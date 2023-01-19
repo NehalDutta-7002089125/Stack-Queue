@@ -23,6 +23,17 @@ namespace UC_stack_queue
             
 
         }
+           public void pop()
+        {
+            if(top == null)
+            {
+                Console.WriteLine("The stack is empty");
+            }
+            else
+            {
+                top= top.next;
+            }
+        }
         public void show()
         {
             Node temp= top;
