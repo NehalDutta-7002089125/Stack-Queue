@@ -7,9 +7,9 @@ namespace UC_stack_queue
         static void Main(string[] args)
         {
             StackQueue a=new StackQueue();
-            a.push(70);
-            a.push(30);
-            a.push(56);
+            a.enqueue(56);
+            a.enqueue(30);
+            a.enqueue(70);
             a.show();
         }
     }

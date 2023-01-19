@@ -6,26 +6,28 @@ namespace UC_stack_queue
 {
     internal class StackQueue
     {
-       public Node top;
-        public void push(int data)
+       public Node front;
+        public Node rare;
+        public void enqueue(int data)
         {
             Node node = new Node();
             node.data = data;
-            if(top== null)
+            if(front== null)
             {
-                top= node;
+                front = node;
+                rare= node;
             }
             else
             {
-                node.next = top;
-                top = node;
+                rare.next= node;
+                rare=node;
             }
             
 
         }
         public void show()
         {
-            Node temp= top;
+            Node temp= front;
             while(temp!=null)
             {
                 Console.WriteLine(temp.data);
